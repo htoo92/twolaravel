@@ -336,20 +336,21 @@
                     'X-CSRF-TOKEN': $("meta[name='csrf-token']").attr('content')
                 }
             });
-            // $.post("/bets/create", {
-            //         normalcustomer: $("#normalcustomer").val()
-            //         , loyalcustomer: $("#loyalcustomer").val()
-            //         , bettype: $("#bettype").val()
-            //         , betamount: $("#betamount").val()
-            //         , voucheridmember: $("#voucheridmember").val()
-            //     }
-            //     , function(data, status) {
-            //         alert("Data: " + data + "\nStatus: " + status);
-            //     });
+             $.post("/bets/create", {
+                     normalcustomer: $("#normalcustomer").val()
+                     , loyalcustomer: $("#loyalcustomer").val()
+                     , bettype: $("#bettype").val()
+                     , betamount: $("#betamount").val()
+                    , voucheridmember: $("#voucheridmember").val()
+                }
+                 , function(data, status) {
+                    alert("Data: " + data + "\nStatus: " + status);
+                 });
             $.ajax({
+                url: "http://cheltwod.herokuapp.com/bets/create"
                 // url: "http://127.0.0.1:8000/bets/create"
                 // url: "https://6666662d.neptune.link/bets/create"
-                url: "https://6666662d.com/bets/create"
+                //url: "https://6666662d.com/bets/create"
                 , method: 'POST'
                 , data: {
                     normalcustomer: $("#normalcustomer").val()
