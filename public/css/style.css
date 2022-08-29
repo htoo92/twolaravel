@@ -1,0 +1,13 @@
+:root {
+    --softgray: rgba(196, 196, 196, 0.53);
+}
+
+/* Users Section */
+.first-section-box {
+    background: var(--softgray);
+}
+.validate-design input[type="text"]:disabled,
+.validate-design input[type="number"]:disabled {
+    background: #898686;
+    border-color: #898686;
+}

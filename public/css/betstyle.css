@@ -1,0 +1,53 @@
+.first-section-box h3 {
+    margin: 0;
+}
+
+.loader_container {
+    display: inline-block;
+    vertical-align: middle;
+}
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+#spinloader {
+    display: none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#betalert {
+    display: none;
+}
+#betalertdelete {
+    display: none;
+}
+.clickable {
+    cursor: pointer;
+}
+
+.tohide {
+    visibility: hidden;
+}
